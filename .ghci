@@ -1,0 +1,16 @@
+:set prompt "λ> "
+:set prompt-cont " | "
+:def hlint \s -> return $ ":! hlint \" ++ s ++ "\""
+:def hoogle \s -> return $ ":! hoogle --count=15 \"" ++ s ++ "\""
+:def pf \str -> return $ ":! pointfree \"" ++ str ++ "\""
+:set +m
+:set +t
+:set -XTypeApplications
+-- :set -XOverloadedStrings
+-- :set -XOverloadedLists
+-- import qualified Data.Set as Set
+-- import           Data.Set (Set)
+-- import qualified Data.List as L
+-- import qualified Data.Map as Map
+-- import           Data.Map (Map)
+

@@ -1,0 +1,13 @@
+cradle:
+  stack:
+    - path: "./src"
+      component: "create-module:lib"
+
+    - path: "./app/Main.hs"
+      component: "create-module:exe:create-module"
+
+    - path: "./app/Paths_create_module.hs"
+      component: "create-module:exe:create-module"
+
+    - path: "./test"
+      component: "create-module:test:spec"

@@ -1,0 +1,8 @@
+#!/usr/bin/env bash
+
+set -u
+
+cmd="ghcup run --quick --ghc $ghc --hls $hls --stack $stack --cabal $cabal -- $@"
+echo "$cmd"
+exec $cmd
+
