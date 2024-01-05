@@ -1,8 +1,8 @@
 :set prompt "λ> "
 :set prompt-cont " | "
-:def hlint \s -> return $ ":! hlint \" ++ s ++ "\""
+:def hlint  \s -> return $ ":! hlint \"" ++ s ++ "\""
 :def hoogle \s -> return $ ":! hoogle --count=15 \"" ++ s ++ "\""
-:def pf \str -> return $ ":! pointfree \"" ++ str ++ "\""
+:def pf     \s -> return $ ":! pointfree \"" ++ s ++ "\""
 :set +m
 :set +t
 :set -XTypeApplications
