@@ -1,3 +1,4 @@
 #!/usr/bin/env bash
-runstack build hlint hoogle pointfree --copy-compiler-tool
+stack build hlint --copy-compiler-tool
+#stack build hlint hoogle pointfree --copy-compiler-tool
 
