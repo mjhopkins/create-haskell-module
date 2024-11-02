@@ -1,8 +1,8 @@
-name:                create-module
+name:                create-haskell-module
 version:             0.1.0.0
 #synopsis:
 #description:
-homepage:            https://github.com/mjhopkins/create-module#readme
+homepage:            https://github.com/mjhopkins/create-haskell-module#readme
 license:             BSD3
 author:              Mark Hopkins
 maintainer:          markjohnhopkins@gmail.com
@@ -17,7 +17,6 @@ dependencies:
   - directory
   - extra
   - filepath
-  - mtl
   - regex-tdfa
   - transformers
 
@@ -50,11 +49,11 @@ _executable-ghc-options: &executable-ghc-options
   - -O2
 
 executables:
-  new-module:
+  new-hs-module:
     source-dirs:      app
     main:             Main.hs
     dependencies:
-      - create-module
+      - create-haskell-module
     ghc-options: *executable-ghc-options
 
 tests:
@@ -62,7 +61,7 @@ tests:
     main: Spec.hs
     source-dirs: test
     dependencies:
-      - create-module
+      - create-haskell-module
       - HUnit
       - hedgehog
       - tasty

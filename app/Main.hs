@@ -29,13 +29,13 @@ run dir force = either handleErr return <=< runExceptT . newModule dir force . t
 
 usage :: String
 usage = unlines
-  [ "Usage: new-module [options] FQN"
+  [ "Usage: new-hs-module [options] FQN"
   , ""
   , "Create a new empty Haskell module, creating directories as required."
   , ""
   , "Command options:"
-  , "  -d, --dir directory        Directory in which to create module (defaults to src);"
-  , "  -f, --force                Overwrite the file if it already exists;"
+  , "  -d, --dir directory        Directory in which to create module (defaults to src)."
+  , "  -f, --force                Overwrite the file if it already exists."
   ]
 
 -- | Returns (directory, force, module name)
